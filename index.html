@@ -11,7 +11,7 @@
 
 <body>
 
-  <header>
+  <header class="main-header">
     <h1>📘 The Code Magazine</h1>
     <nav>
       <a href="blog.html" target="_blank">Blog</a>
@@ -28,7 +28,8 @@
 
       <img src="/img/laura-jones.jpg" alt="laura-jones-pic" width="50px"
         height="50px">
-      <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+      <p id="author-details">Posted by <strong>Laura Jones</strong> on
+        Monday, June 21st 2027</p>
       <img src="/img/post-img.jpg" alt="post-img" width="500px" height="200px">
     </header>
 
@@ -56,7 +57,7 @@
     <p>In HTML, each element is made up of 3 parts:</p>
 
     <ol>
-      <li>The opening tag</li>
+      <li class="first-li">The opening tag</li>
       <li>The closing tag</li>
       <li>The actual element</li>
     </ol>
@@ -70,7 +71,8 @@
     <p>There are countless reasons for learning the fundamental language of the
       web. Here are 5 of them:</p>
     <ul>
-      <li>To be able to use the fundamental web dev language</li>
+      <li class="first-li">To be able to use the fundamental web dev language
+      </li>
       <li>To hand-craft beautiful websites instead of relying on tools like
         Worpress
         or Wix</li>
@@ -84,13 +86,13 @@
 
   <aside>
     <h4>Related Posts</h4>
-    <ul>
+    <ul class="related-list">
       <li>
         <img src="/img/related-1.jpg" alt="man-on-laptop" height="75px"
           width="75px">
         <a href="h2lwd.com" target="_blank">How to Learn Web
           Development</a>
-        <p>by Edson Ragas</p>
+        <p class="related-author">by Edson Ragas</p>
       </li>
 
 
@@ -98,20 +100,20 @@
         <img src="img/related-2.jpg" alt="night-lightning-photo" height="75px"
           width="75px">
         <a href="tupocsss.com" target="_blank">The Unknown Powers of CSS</a>
-        <p>by Dillon Danis</p>
+        <p class="related-author">by Dillon Danis</p>
       </li>
 
       <li>
         <img src="img/related-3.jpg" alt="code-pic" height="75px" width="75px">
         <a href="wja.com" target="_blank">Why JavaScript is Awesome</a>
-        <p>By Edson</p>
+        <p class="related-author">By Edson Ragas</p>
       </li>
 
     </ul>
   </aside>
 
   <footer>
-    <p>
+    <p id="copyright">
       Copyright &copy; 2035 by The Code Magazine
     </p>
   </footer>
