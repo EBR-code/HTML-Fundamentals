@@ -54,6 +54,32 @@ li:last-child {
 li:nth-child(even) {
   /* color: red; */
 }
+/* Misconception this won't work */
+article p:first-child {
+  color: red;
+}
+
+/* Styling Links */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: 700;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
 
 aside {
   background-color: #f7f7f7;
@@ -79,10 +105,6 @@ body {
   list-style: none;
 }
 
-/* .first-li {
-  font-weight: 700;
-} */
-
 /* ID */
 
 #author-details {
@@ -92,4 +114,22 @@ body {
 
 #copyright {
   font-size: 16px;
+}
+
+/* Resolving conflicts */
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
 }
