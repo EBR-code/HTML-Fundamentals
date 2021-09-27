@@ -1,9 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
-  border: 5px solid #363636;
+}
+
+li {
+  margin: 10px 0;
 }
 
 /* Classes */
+
+.main-container {
+  width: 825px;
+  margin: 0 auto;
+  border: 5px solid #363636;
+}
 
 .product-title {
   text-align: center;
@@ -11,16 +25,29 @@ body {
   font-weight: 775;
   font-size: 23px;
   background-color: #f7f7f7;
+
+  padding: 15px 20px;
+}
+
+.product-img {
+  margin-bottom: 10px;
 }
 
 .price {
   font-size: 23px;
+  margin-bottom: 5px;
 }
 
 .shipping {
-  font-size: 15px;
+  font-size: 13px;
   color: #777777;
   text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.shipping-description {
+  margin-bottom: 5px;
 }
 
 .more-info {
@@ -34,10 +61,13 @@ body {
 .details-title {
   font-size: 17px;
   text-transform: uppercase;
+  margin: 30px 0px 20px;
 }
 
 .details-list {
   list-style: square;
+  margin: 10px 0px;
+  padding: 0px 20px;
 }
 
 .add-cart {
@@ -45,8 +75,10 @@ body {
   color: #f7f7f7;
   font-size: 20px;
   text-transform: uppercase;
-  border: none;
+  border: 5px solid #0000;
   cursor: pointer;
+  width: 100%;
+  padding: 15px 10px;
 }
 
 .add-cart:hover {

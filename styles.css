@@ -92,9 +92,17 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
+  width: 500px;
 }
 
 /* Classes */
+
+.container {
+  width: 800px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
 
 .main-header {
   background-color: #d6d6d6;
@@ -103,6 +111,7 @@ aside {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
+  height: 80px;
 }
 .related-author {
   font-size: 18px;
@@ -115,6 +124,11 @@ aside {
 
 .related-list {
   list-style: none;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
 }
 
 /* ID */
