@@ -7,6 +7,7 @@ body {
   font-family: sans-serif;
   color: #444;
   background-color: #ebebeb;
+  position: relative;
 }
 
 h1,
@@ -111,7 +112,7 @@ aside {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
 }
 .related-author {
   font-size: 18px;
@@ -142,20 +143,24 @@ aside {
   font-size: 16px;
 }
 
-/* Resolving conflicts */
-
-/* #copyright {
-  color: red;
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
 }
 
-.copyright {
-  color: blue;
+nav a:link:last-child {
+  margin-right: 0;
 }
 
-.text {
-  color: yellow;
-}
+.like-button {
+  font-size: 25px;
+  padding: 8px 15px;
+  cursor: pointer;
 
-footer p {
-  color: green;
-} */
+  position: absolute;
+  /* top: 50px;
+  left: 50px; */
+  bottom: 50px;
+  right: 50px;
+}
