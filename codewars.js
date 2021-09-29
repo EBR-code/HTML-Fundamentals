@@ -27,16 +27,16 @@
 // basicOp('*', 5, 5)         // Output: 25
 // basicOp('/', 49, 7)        // Output: 7
 
-// const basicOp = function (operation, value1, value2) {
-//   if (operation === '+') {
-//     return value1 + value2;
-//   } else if (operation === '-') {
-//     return value1 - value2;
-//   } else if (operation === '*') {
-//     return value1 * value2;
-//   } else if (operation === '/') {
-//     return value1 / value2;
-//   }
-// };
+const basicOp = function (operation, value1, value2) {
+  if (operation === '+') {
+    return value1 + value2;
+  } else if (operation === '-') {
+    return value1 - value2;
+  } else if (operation === '*') {
+    return value1 * value2;
+  } else if (operation === '/') {
+    return value1 / value2;
+  }
+};
 
-// console.log(basicOp('*', 4, 7));
+console.log(basicOp('*', 4, 7));

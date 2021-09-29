@@ -22,9 +22,29 @@ h1 {
   font-style: italic;
 }
 
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
 h2 {
   font-size: 40px;
   margin-bottom: 30px;
+
+  position: relative;
+}
+
+h2::after {
+  content: ' TOP';
+  background-color: #e4ce0c;
+  color: #444;
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
 
 h3 {
@@ -43,6 +63,10 @@ p {
   font-size: 22px;
   line-height: 1.5;
   margin-bottom: 15px;
+}
+
+h3 + p::first-line {
+  color: red;
 }
 
 ul,
@@ -96,6 +120,16 @@ aside {
   width: 500px;
 }
 
+nav a:link {
+  margin-right: 30px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
 /* Classes */
 
 .container {
@@ -132,27 +166,6 @@ aside {
   height: auto;
 }
 
-/* ID */
-
-#author-details {
-  font-style: italic;
-  font-size: 18px;
-}
-
-#copyright {
-  font-size: 16px;
-}
-
-nav a:link {
-  margin-right: 30px;
-  margin-top: 10px;
-  display: inline-block;
-}
-
-nav a:link:last-child {
-  margin-right: 0;
-}
-
 .like-button {
   font-size: 25px;
   padding: 8px 15px;
@@ -164,3 +177,19 @@ nav a:link:last-child {
   bottom: 50px;
   right: 50px;
 }
+
+/* ID */
+
+#author-details {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+/* .main-header nav a:link {
+  color: red;
+  margin-top: 100px;
+} */

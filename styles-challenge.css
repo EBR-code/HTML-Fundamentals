@@ -21,6 +21,19 @@ body {
   font-size: 23px;
   background-color: #f7f7f7;
   padding: 15px 20px;
+  position: relative;
+}
+
+.product-title::before {
+  content: 'SALE';
+  background-color: #e61b00;
+  color: #ffffff;
+  font-size: 12px;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: -25px;
+  left: -35px;
+  padding: 10px;
 }
 
 .product-img {
@@ -33,7 +46,7 @@ body {
 }
 
 .shipping {
-  font-size: 13px;
+  font-size: 12px;
   color: #777777;
   text-transform: uppercase;
   font-weight: 700;
@@ -85,4 +98,51 @@ body {
 .add-cart:hover {
   background-color: #f7f7f7;
   color: #242424;
+}
+
+.color-boxes {
+  margin-top: 20px;
+  padding: 15px 0;
+}
+
+.black-box {
+  background-color: #000000;
+  padding: 11px;
+  margin-left: 0;
+  display: inline-block;
+}
+
+.blue-box {
+  background-color: #0000ff;
+  padding: 11px;
+  margin-left: 11px;
+  display: inline-block;
+}
+
+.red-box {
+  background-color: #ff0000;
+  padding: 11px;
+  margin-left: 11px;
+  display: inline-block;
+}
+
+.yellow-box {
+  background-color: #fbc100;
+  padding: 11px;
+  margin-left: 11px;
+  display: inline-block;
+}
+
+.green-box {
+  background-color: #6ecf00;
+  padding: 11px;
+  margin-left: 11px;
+  display: inline-block;
+}
+
+.brown-box {
+  background-color: #8f2e2e;
+  padding: 11px;
+  margin-left: 11px;
+  display: inline-block;
 }
