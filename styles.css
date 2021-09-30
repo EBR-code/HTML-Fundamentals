@@ -65,9 +65,9 @@ p {
   margin-bottom: 15px;
 }
 
-h3 + p::first-line {
+/* h3 + p::first-line {
   color: red;
-}
+} */
 
 ul,
 ol {
@@ -141,13 +141,11 @@ nav a:link:last-child {
 
 .main-header {
   background-color: #d6d6d6;
-  /* padding: 20px;
-  padding-left: 40px;
-  padding-right: 40px; */
+
   padding: 20px 40px;
   margin-bottom: 60px;
-  /* height: 80px; */
 }
+
 .related-author {
   font-size: 18px;
   font-weight: bold;
@@ -189,7 +187,28 @@ nav a:link:last-child {
   font-size: 16px;
 }
 
-/* .main-header nav a:link {
-  color: red;
-  margin-top: 100px;
-} */
+/* FLOATS */
+.author-img {
+  float: left;
+  margin-bottom: 20px;
+}
+
+.author {
+  float: left;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
