@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -34,10 +35,6 @@ body {
   top: -25px;
   left: -35px;
   padding: 10px;
-}
-
-.product-img {
-  margin-bottom: 10px;
 }
 
 .price {
@@ -145,4 +142,42 @@ body {
   padding: 11px;
   margin-left: 11px;
   display: inline-block;
+}
+
+/* FLOATS */
+.product-img {
+  float: left;
+  margin-right: 20px;
+}
+
+.product-description {
+  float: left;
+  width: 240px;
+  right: 50px;
+  margin: 20px 20px;
+}
+
+.shipping {
+  float: right;
+  position: relative;
+  top: -30px;
+}
+
+.product-details {
+  float: right;
+  width: 240px;
+  margin: 20px 10px;
+  padding: 20px;
+  padding-top: 0;
+  padding-left: 0;
+}
+
+.shipping-description {
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.details-title {
+  margin: 0;
+  margin-bottom: 20px;
 }
