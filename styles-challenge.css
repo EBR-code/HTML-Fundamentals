@@ -152,24 +152,20 @@ body {
 
 .product-description {
   float: left;
-  width: 240px;
-  right: 50px;
-  margin: 20px 20px;
+  width: 243px;
+  margin: 20px 10px;
 }
 
 .shipping {
   float: right;
   position: relative;
-  top: -30px;
+  top: -25px;
 }
 
 .product-details {
   float: right;
-  width: 240px;
+  width: 243px;
   margin: 20px 10px;
-  padding: 20px;
-  padding-top: 0;
-  padding-left: 0;
 }
 
 .shipping-description {
