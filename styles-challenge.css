@@ -145,6 +145,7 @@ body {
 }
 
 /* FLOATS */
+/* 
 .product-img {
   float: left;
   margin-right: 20px;
@@ -176,4 +177,20 @@ body {
 .details-title {
   margin: 0;
   margin-bottom: 20px;
+} */
+
+/* Flexbox */
+
+.row {
+  display: flex;
+  gap: 40px;
+}
+
+.product-text {
+  display: flex;
+  gap: 40px;
+}
+
+.details-title {
+  margin: 0;
 }
