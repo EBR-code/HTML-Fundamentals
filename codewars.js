@@ -50,8 +50,21 @@
 // For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
 
 // Note: for this kata y isn't considered a vowel.
-const disemvowel = function (str) {
-  return str.replace(/[aeiou]/gi, '');
-};
+// const disemvowel = function (str) {
+//   return str.replace(/[aeiou]/gi, '');
+// };
 
-console.log(disemvowel('This website is for losers LOL!'));
+// console.log(disemvowel('This website is for losers LOL!'));
+
+// 8 kyu counting sheep
+// const countSheeps = function (arrayOfSheep) {
+//   let sheepCount = 0;
+//   for (let i = 0; i < arrayOfSheep.length; i++) {
+//     if (arrayOfSheep[i] === true) {
+//       sheepCount++
+//     }
+//   }
+//   return sheepCount
+// }
+
+// 8 kyu Is n divisible by x and y?
