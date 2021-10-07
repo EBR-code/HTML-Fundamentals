@@ -141,7 +141,7 @@ nav a:link:last-child {
   background-color: #d6d6d6;
 
   padding: 20px 40px;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 
 .related-author {
@@ -267,7 +267,8 @@ footer {
   font-weight: normal;
 }
 
-.row {
+/* FLEXBOX LAYOUT */
+/* .row {
   display: flex;
   align-items: flex-start;
   gap: 75px;
@@ -280,9 +281,39 @@ article {
 }
 
 aside {
-  /* Flex defaults */
-  /* flex-grow: 0;
+  Flex defaults 
+  flex-grow: 0;
   flex-shrink: 1;
-  flex-basis: auto; */
+  flex-basis: auto; 
   flex: 0 1 300px;
+} */
+
+/* CSS GRID LAYOUT */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  column-gap: 75px;
+  row-gap: 60px;
+  align-items: start;
+}
+
+.main-header {
+  /* grid-column: 1/span 2; */
+  /* or */
+  grid-column: 1/-1;
+  grid-row: 1/2;
+  /* row-gap: 60px; */
+}
+
+article {
+}
+
+aside {
+  /* align-self: start; */
+}
+
+footer {
+  /* background-color: #1098ad; */
+  grid-column: 1/-1;
 }
